@@ -195,7 +195,7 @@ for_window [instance="ddterm"] resize set 1200 800
 for_window [instance="ddterm"] move scratchpad
 
 exec --no-startup-id compton -b --config ~/.config/compton/compton.conf
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/jpn.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/i3/wallpaper.jpg
 
 
 bindsym $mod+t [instance="ddterm"] scratchpad show; [instance="ddterm"] move position center

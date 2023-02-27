@@ -8,7 +8,7 @@ sudo apt-get install feh
 sudo apt-get install kitty
 sudo apt-get install i3
 
-cp wallpaper.jpg ~/Pictures/i3/
+mkdir -p ~/Pictures/i3 && cp wallpaper.jpg ~/Pictures/i3/
 cp config ~/.config/i3/
 
 echo "Hello World"

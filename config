@@ -182,11 +182,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-# bar {
-#         status_command i3status
-# }
+bar {
+        status_command i3status
+}
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id kitty --name ddterm
 exec --no-startup-id nm-applet
 
@@ -194,9 +193,7 @@ for_window [instance="ddterm"] floating enabled
 for_window [instance="ddterm"] resize set 1200 800
 for_window [instance="ddterm"] move scratchpad
 
-exec --no-startup-id compton -b --config ~/.config/compton/compton.conf
 exec --no-startup-id feh --bg-scale ~/Pictures/i3/wallpaper.jpg
-
 
 bindsym $mod+t [instance="ddterm"] scratchpad show; [instance="ddterm"] move position center
 

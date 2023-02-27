@@ -11,14 +11,14 @@ general {
         interval = 5
 }
 
-order += "volue master"
+order += "volume master"
 order += "battery all"
 order += "tztime local"
 
 volume master {
         format = "VOL: %volume"
         format_muted = "VOL: muted (%volume)"
-        device = "pulse:1"
+        device = "pulse"
 }
 
 battery all {

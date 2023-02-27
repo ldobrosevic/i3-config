@@ -11,6 +11,7 @@ sudo apt-get install i3
 
 mkdir -p ~/Pictures/i3 && cp wallpaper.jpg ~/Pictures/i3/
 mkdir -p ~/.config/i3 && cp config ~/.config/i3/
-mkdir -p ~/.config/i3status && cp i3status_config ~/.config/i3status/config 
+mkdir -p ~/.config/i3status && cp i3status_config ~/.config/i3status
+mv ~/.config/i3status/i3status_config ~/.config/i3status/config 
 
 echo "Hello World"
